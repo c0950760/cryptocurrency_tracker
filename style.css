@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+.banner {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.crypto-section, .comparison-section, .user-preferences {
+  background: #fff;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.crypto-card {
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.crypto-card:hover {
+  transform: scale(1.03);
+}
+
+.row-0 {
+  background-color: #6a11cb;
+}
+.row-1 {
+  background-color: #11998e;
+}
+.row-2 {
+  background-color: #ff6f61;
+}
+
+.selected-card {
+  background: #eeeeee;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.compare-action {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#compare-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#compare-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}

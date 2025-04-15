@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Site Banner -->
+  <div class="banner">
+    <h1>Track & Compare Top Cryptocurrencies</h1>
+    <p>Stay updated with real-time market trends</p>
+  </div>
+
+  <main>
+    <section class="crypto-section">
+      <h2>Available Cryptocurrencies</h2>
+      <div id="crypto-container" class="grid-layout"></div>
+    </section>
+
+    <section class="comparison-section">
+      <h2>Compare Cryptos</h2>
+      <div id="selected-container" class="compare-list"></div>
+    </section>
+
+    <section class="user-preferences">
+      <h2>Settings</h2>
+      <label>
+        <input type="checkbox" id="toggle-24h" />
+        Show 24h Price Change
+      </label>
+      <label>
+        Sort by:
+        <select id="sort-dropdown">
+          <option value="market_cap_desc">Market Cap (High to Low)</option>
+          <option value="market_cap_asc">Market Cap (Low to High)</option>
+        </select>
+      </label>
+    </section>
+
+    <!-- Compare Button -->
+    <div class="compare-action">
+      <button id="compare-button" disabled>Compare</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
